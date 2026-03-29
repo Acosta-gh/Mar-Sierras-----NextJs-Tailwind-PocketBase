@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary: #29563F;
+  --color-primary-dark: #092F1D;
+  --color-accent: #6F9F8D;
+
+  --color-bg: #F7F5F3;
+  --color-surface: #FDFBFB;
+  --color-soft: #EEF2EF;
+
+  --color-text-primary: #0B2122;
+  --color-text-secondary: #0B2122;
+  --color-text-on-primary: #FDFBFB;
+
+  --color-border: #E3E5E2;
+  --color-divider: #D6D9D6;
+
+  --color-btn-primary: #29563F;
+  --color-btn-hover: #092F1D;
+  --color-btn-disabled: #AAB7B0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Display headings */
+.font-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Decorative rule */
+.rule-gold {
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: #c9a84c;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+/* Smooth page transitions */
+main {
+  animation: fadeUp 0.45s ease both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #e2e8f0;
+}
+
+.skeleton-box::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0,
+      rgba(255, 255, 255, 0.2) 20%,
+      rgba(255, 255, 255, 0.5) 60%,
+      rgba(255, 255, 255, 0));
+  animation: shimmer 3s infinite;
+}
