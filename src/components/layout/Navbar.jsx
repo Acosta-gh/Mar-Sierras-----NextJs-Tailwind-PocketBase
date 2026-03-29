@@ -29,13 +29,14 @@ export default function Navbar() {
                transition-transform duration-300 ease-in-out 
                group-hover:scale-105"
             >
-              <Image
-                src="/logo.png"
+              <img
+                src="/logotinypng.png"
                 alt="Logo"
                 width={128}
                 height={128}
                 className="object-contain"
               />
+
             </div>
             <span className="font-semibold text-lg md:text-xl tracking-tight text-primary">
               MAR & SIERRAS
