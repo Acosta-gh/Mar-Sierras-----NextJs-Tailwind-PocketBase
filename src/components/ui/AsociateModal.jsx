@@ -103,7 +103,7 @@ export default function AsociateModal() {
                         initial={{ opacity: 0, scale: 0.95, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.95, y: 20 }}
-                        className="border-1 border-gray-200 relative w-full max-w-lg md:max-w-3xl lg:max-w-4xl bg-white md:rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[100vh] md:min-h-[600px] md:h-auto"
+                        className="border-1 border-gray-200 relative w-full max-w-lg md:max-w-3xl lg:max-w-4xl bg-white md:rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row min-h-[90dvh] md:min-h-[600px] md:h-auto "
                     >
                         {/* Close Button */}
                         <button
