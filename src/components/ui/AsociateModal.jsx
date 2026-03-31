@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check, ArrowRight, ArrowLeft } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
 import { createContact } from '@/lib/pocketbase';
-
+import Link from 'next/link';
 
 const steps = [
     { id: 1, title: 'Datos personales' },
@@ -397,7 +397,7 @@ export default function AsociateModal() {
                                                                     </div>
                                                                 </div>
                                                                 <span className="text-xs text-gray-500 leading-tight">
-                                                                    Al hacer click acepto recibir comunicaciones comerciales de Mar & Sierras LTDA.
+                                                                    Al hacer click acepto recibir comunicaciones comerciales de Mar & Sierras LTDA. y las políticas de privacidad. <Link href="/privacidad" target="_blank" className="text-primary hover:underline">Ver políticas de privacidad</Link>
                                                                 </span>
                                                             </label>
                                                         </div>
