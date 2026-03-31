@@ -9,12 +9,12 @@ const testimonials = [
     {
         name: 'Adolfo García',
         business: 'Laprida Confort',
-        quote: 'El poder de negociación que tenemos al comprar en bloque es increíble. Además, el equipo siempre está dispuesto a asesorarnos. Ya no me siento sola compitiendo contra las grandes cadenas.'
+        quote: 'El poder de negociación que tenemos al comprar en bloque es increíble. Además, el equipo siempre está dispuesto a asesorarnos. Ya no me siento solo compitiendo contra las grandes cadenas.'
     },
     {
         name: 'Acosta Leandro',
         business: 'CKS Hogar y Muebles',
-        quote: 'Hace 10 años que soy parte de la cooperativa. La red de colegas a nivel nacional me permite estar siempre actualizado y conseguir mercadería que de otra forma sería imposible.'
+        quote: 'Hace 10 años que soy parte de la cooperativa, mi negocio ha crecido exponencialmente desde que me uní. Fue un cambio radical en la forma de comprar; allí es donde se hace la diferencia.'
     }
 ];
 
