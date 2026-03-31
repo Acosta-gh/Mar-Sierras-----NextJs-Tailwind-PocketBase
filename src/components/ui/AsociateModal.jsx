@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Check, ArrowRight, ArrowLeft } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
+import { createContact } from '@/lib/pocketbase';
+
 
 const steps = [
     { id: 1, title: 'Datos personales' },
@@ -67,17 +69,35 @@ export default function AsociateModal() {
         setStep(1);
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate API call
-        console.log('Form submitted:', formData);
+        try {
+            const payload = {
+                nombreApellido: formData.nombreApellido,
+                telefono: formData.telefono.replace(/\s/g, ''),
+                email: formData.email,
+                nombreNegocio: formData.nombreNegocio,
+                tieneLocal: formData.tieneLocal,
+                localidad: formData.localidad,
+                inscripcion: formData.inscripcion,
+                sucursales: formData.sucursales,
+                antiguedad: formData.antiguedad,
+                aceptaComunicaciones: formData.aceptaComunicaciones,
+            };
 
-        setTimeout(() => {
-            setIsSubmitting(false);
+
+            await createContact(payload);
+
             setIsSuccess(true);
-        }, 1500);
+
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Error al enviar el formulario');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     if (!isAsociateModalOpen && !isSuccess) return null;

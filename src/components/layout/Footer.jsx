@@ -52,12 +52,15 @@ export default function Footer() {
                     <div>
                         <h4 className="font-bold text-text-on-primary mb-6 uppercase tracking-wider text-sm">Legal & Soporte</h4>
                         <ul className="space-y-4">
+                            {/*
                             <li>
                                 <Link href="#faq" className="text-text-on-primary/60 hover:text-text-on-primary transition-colors text-sm">Preguntas Frecuentes</Link>
                             </li>
+                            
                             <li>
                                 <Link href="/terminos" className="text-text-on-primary/60 hover:text-text-on-primary transition-colors text-sm">Términos y condiciones</Link>
                             </li>
+                             */}
                             <li>
                                 <Link href="/privacidad" className="text-text-on-primary/60 hover:text-text-on-primary transition-colors text-sm">Políticas de privacidad</Link>
                             </li>
@@ -70,15 +73,15 @@ export default function Footer() {
                         <ul className="space-y-5">
                             <li className="flex items-start gap-3">
                                 <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                                <span className="text-text-on-primary/60 text-sm">Av. Ejemplo 1234, CABA, Argentina</span>
+                                <span className="text-text-on-primary/60 text-sm">Matheu 3065, Mar del Plata, Bs.As., Argentina</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                                <span className="text-text-on-primary/60 text-sm">+54 11 0000-0000</span>
+                                <span className="text-text-on-primary/60 text-sm">+54 9 2235 12-0620</span>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                                <span className="text-text-on-primary/60 text-sm">asociados@marysierras.com.ar</span>
+                                <span className="text-text-on-primary/60 text-sm">cadeconfort@gmail.com</span>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +94,7 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} Cooperativa Mar & Sierras LTDA. Todos los derechos reservados.
                     </p>
                     <p className="text-text-on-primary/40 text-xs">
-                        Desarrollado para la fuerza cooperativa.
+                        Desarrollado por <Link href="https://auroralabs.com.ar" target="_blank" className="text-text-on-primary/60 hover:text-text-on-primary transition-colors text-sm">AuroraLabs</Link>
                     </p>
                 </div>
             </div>

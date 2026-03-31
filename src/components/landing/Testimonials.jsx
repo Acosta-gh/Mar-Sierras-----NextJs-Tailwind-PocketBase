@@ -2,18 +2,18 @@ import { Star } from 'lucide-react';
 
 const testimonials = [
     {
-        name: 'Carlos Rodríguez',
-        business: 'ElectroHogar Sur',
+        name: 'Walter González',
+        business: 'EFEGE Hogar',
         quote: 'Desde que me asocié a Mar & Sierras, mis márgenes de ganancia mejoraron un 30%. El acceso directo a las principales marcas sin intermediarios hizo toda la diferencia en mi ciudad.'
     },
     {
-        name: 'Laura Méndez',
-        business: 'La Comercial SRL',
+        name: 'Adolfo García',
+        business: 'Laprida Confort',
         quote: 'El poder de negociación que tenemos al comprar en bloque es increíble. Además, el equipo siempre está dispuesto a asesorarnos. Ya no me siento sola compitiendo contra las grandes cadenas.'
     },
     {
-        name: 'Roberto Gómez',
-        business: 'Gómez Electrodomésticos',
+        name: 'Acosta Leandro',
+        business: 'CKS Hogar y Muebles',
         quote: 'Hace 10 años que soy parte de la cooperativa. La red de colegas a nivel nacional me permite estar siempre actualizado y conseguir mercadería que de otra forma sería imposible.'
     }
 ];

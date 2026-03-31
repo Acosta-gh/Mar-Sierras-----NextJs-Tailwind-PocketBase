@@ -3,7 +3,8 @@
 import Link from 'next/link';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { useModal } from '@/context/ModalContext';
-
+import Image from 'next/image';
+import storefrontImage from '@/assets/storefront.png';
 export default function HeroSection() {
     const { openAsociateModal } = useModal();
 
@@ -51,20 +52,26 @@ export default function HeroSection() {
                         <div className="relative aspect-[4/5] sm:aspect-square lg:aspect-[4/3] w-full rounded-[2rem] overflow-hidden shadow-2xl shadow-primary-dark/5 bg-soft border border-border">
                             {/* Soft placeholder for image */}
                             <div className="absolute inset-0 flex items-center justify-center text-text-secondary p-12 text-center font-medium">
-                                [ Imagen inspiracional moderna: hogar, cocina o equipo cooperativo ]
+                                <Image
+                                    src={storefrontImage}
+                                    alt="Local de Mar & Sierras"
+                                    fill
+                                    priority
+                                    className="object-cover object-[30%_center]" />
                             </div>
                         </div>
 
-                        {/* Floating Badge */}
+                        {/* Floating Badge  */}
                         <div className="absolute -bottom-6 -left-2 md:bottom-10 md:-left-10 bg-surface p-4 rounded-2xl shadow-xl shadow-text-primary/5 border border-divider flex items-center gap-4 animate-bounce" style={{ animationDuration: '3s' }}>
                             <div className="w-12 h-12 rounded-full bg-soft flex items-center justify-center text-primary font-bold text-xl">
-                                +150
+                                +45
                             </div>
                             <div>
-                                <p className="text-sm font-bold text-text-primary">Comercios</p>
-                                <p className="text-xs text-text-secondary">en todo el país</p>
+                                <p className="text-sm font-bold text-text-primary">Años</p>
+                                <p className="text-xs text-text-secondary">en el mercado</p>
                             </div>
                         </div>
+
                     </div>
 
                 </div>

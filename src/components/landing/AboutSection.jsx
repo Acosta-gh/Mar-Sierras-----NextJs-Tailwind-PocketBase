@@ -2,28 +2,38 @@ import { MapPin, Users2, ShieldCheck } from 'lucide-react';
 
 export default function AboutSection() {
     const stats = [
-        { value: '+150', label: 'Comercios', icon: Users2 },
-        { value: '+5', label: 'Provincias', icon: MapPin },
-        { value: '+40', label: 'Años de experiencia', icon: ShieldCheck }
+        {
+            value: '1977',
+            label: 'Año de fundación — casi cinco décadas en el mercado',
+            icon: ShieldCheck
+        },
+        {
+            value: 'Red nacional',
+            label: 'Comercios de hogar y tecnología en todo el país',
+            icon: MapPin
+        },
+        {
+            value: 'Cooperativa de provisión',
+            label: 'Estructura legal que garantiza la autonomía de cada asociado',
+            icon: Users2
+        }
     ];
 
     return (
         <section id="quienes-somos" className="py-20 md:py-28 bg-bg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row gap-16 items-center">
-
-                    {/* Text Content */}
                     <div className="lg:w-1/2">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary mb-6">Quiénes somos</h2>
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-text-primary mb-6">
+                            Quiénes somos
+                        </h2>
                         <p className="text-lg text-text-secondary mb-6 leading-relaxed">
-                            Mar & Sierras es una cooperativa de provisión nacida de la necesidad de los comercios locales de unir fuerzas para competir en un mercado cada vez más concentrado.
+                            Mar & Sierras es una cooperativa de provisión que desde 1977 agrupa a los principales comercios independientes de artículos para el hogar y tecnología de Argentina.
                         </p>
                         <p className="text-lg text-text-secondary leading-relaxed">
-                            Desde hace más de 40 años agrupamos a los principales vendedores de artículos para el hogar, tecnología y afines de todo el país, garantizando siempre autonomía a cada comercio pero con la fuerza compradora de una gran cadena.
+                            Nuestro modelo es claro: la suma de muchos negocios independientes genera el poder de compra de una gran cadena. Cada asociado conserva su identidad, su gestión y su libertad — y a cambio accede a condiciones comerciales que por su cuenta serían imposibles de obtener.
                         </p>
                     </div>
-
-                    {/* Stats Grid */}
                     <div className="lg:w-1/2 w-full">
                         <div className="grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
                             {stats.map((stat, idx) => {
@@ -42,7 +52,6 @@ export default function AboutSection() {
                             })}
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

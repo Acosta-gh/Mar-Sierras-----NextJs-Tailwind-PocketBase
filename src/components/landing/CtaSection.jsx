@@ -28,7 +28,7 @@ export default function CtaSection() {
                         Quiero asociarme <ArrowRight className="w-6 h-6" />
                     </button>
                     <a
-                        href="https://wa.me/5492615388178"
+                        href="https://wa.me/5492235120620"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="cursor-pointer w-full sm:w-auto inline-flex items-center justify-center gap-2 px-10 py-5 rounded-2xl text-lg font-bold text-text-on-primary bg-transparent border-2 border-surface/30 hover:bg-surface/10 transition-all"
